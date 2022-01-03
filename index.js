@@ -16,7 +16,7 @@ app.use((req, res, next) =>{
 
 app.use('/', route())
 
-const puerto = 3000;
+const puerto = process.env.PORT || 3000;
 app.listen(puerto, ()=>{
     console.log(`Corre en ${puerto}`)
 })
