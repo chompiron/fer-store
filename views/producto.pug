@@ -1,0 +1,24 @@
+extends layout
+block contenido
+     
+     main.contenedor  
+      h1 React Js 
+
+      .camisa 
+       img(src="img/3.jpg", alt="Imagen del producto")
+
+       .camisa__contenido
+        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum repellat ad, repudiandae amet, ipsa nobis, eum minima modi ducimus sapiente aliquam possimus placeat distinctio inventore! Facere, distinctio! Quos, tempore vero?
+
+        form.formulario(action="") 
+         select.formulario__campo 
+          option(disabled selected) --Seleccionar Talla --
+          option Chica
+          option Mediana
+          option grande
+         
+         input(type="number" min="1" class="formulario__campo")
+         input(type="submit" value="Agregar al carrito" class="formulario__submit")
+          
+
+       
